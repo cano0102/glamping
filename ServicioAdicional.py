@@ -3,7 +3,7 @@ class ServicioAdicional:
     def __init__(self, nombre, descripcion, precio, duracion_horas):
         self.__nombre = nombre
         self.__descripcion = descripcion
-        self.___precio = precio
+        self.__precio = precio
         self.__duracion_horas = duracion_horas
 
     def mostrar_info(self):
