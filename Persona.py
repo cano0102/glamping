@@ -7,5 +7,8 @@ class Persona:
         self._identificacion = identificacion
         
         
-        def mostrar_info():
-            pass
+        def mostrar_info(self):
+            return (f"Nombre {self.__nombre} , "
+                    f"Telefono: {self.__telefono}, "
+                    f"Email: {self.__email}$, "
+                    f"Identificacion: {self.__identificacion}, ")
