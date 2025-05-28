@@ -2,7 +2,7 @@ from typing import List
 from datetime import datetime
 from alojamiento import Alojamiento
 from Huesped import Huesped
-
+from ServicioAdicional import ServicioAdicional
 class Reserva:
     _codigo_reserva = 1
     def __init__(self,huesped: Huesped,alojamiento: Alojamiento,fecha_checkin: str, fecha_checkout: str,servicios_adicionales: List[str]):
@@ -41,15 +41,23 @@ class Reserva:
         checkout = datetime.strptime(self.__fecha_checkout, "%Y-%m-%d").date()
         return (checkout - checkin).days
     
-    def agregar_servicio(self,servicio: str):
-        ##FALTA POR EL OBJETO SERVICIO ADICIONAL
-        self.set_services(servicio)
-        print("Servicio agregado correctamente.")
-        pass
-    
-    def calcular_precio_total(self):
-        #FALTA POR EL OBJETO SERVICIO ADICIONAL
-        pass
+    def agregar_servicio(self, servicio: ServicioAdicional):
+        self.__servicios_adicionales.append(servicio)
+        print(f"Servicio '{servicio.mostrar_info()} agregado correctamente.")
+
+    def calcular_precio_total(self, temporada: str = "baja"):
+        # Calcular noches
+        noches = self.calcular_noches()
+        # Precio base del alojamiento según temporada
+        precio_base = self.__alojamiento.get_price()
+        if hasattr(self.__alojamiento, 'calcular_precio_temporada'):
+            self.__alojamiento.calcular_precio_temporada(temporada)
+            precio_base = self.__alojamiento.get_price()
+        total_alojamiento = noches * precio_base
+        # Sumar servicios adicionales
+        total_servicios = sum(servicio._ServicioAdicional__precio for servicio in self.__servicios_adicionales)
+        self.__precio_total = total_alojamiento + total_servicios
+        return self.__precio_total
     
     def cambiar_estado(self, nuevo_estado: str):
         estados_validos = ["confirmada", "en_curso", "finalizada", "cancelada"]
