@@ -19,6 +19,10 @@ class Alojamiento:
                 f"Precio base: {self.__precio_base_noche}$, "
                 f"Amenidades: {', '.join(self.__amenidades)}, "
                 f"Disponible: {'Sí' if self.__disponible else 'No'}")
+    
+    def __str__(self):
+        return f"{self.__tipo} - Capacidad: {self.__capacidad_maxima}, Precio: {self.__precio_base_noche}$"
+
 
     # GETTERS
     def get_price(self):
@@ -47,6 +51,12 @@ class Alojamiento:
 
     def set_disponibilidad(self, nuevo_valor: bool):
         self.__disponible = nuevo_valor
+
+    def ocupar(self):
+        self.__disponible = False
+
+    def liberar(self):
+        self.__disponible = True
 
     def calcular_precio_temporada(self, temporada: str):
         precio = self.get_price()

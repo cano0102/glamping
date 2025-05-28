@@ -74,6 +74,6 @@ class Reserva:
         print(f"Alojamiento: {self.__alojamiento}")
         print(f"Fecha de check-in: {self.__fecha_checkin}")
         print(f"Fecha de check-out: {self.__fecha_checkout}")
-        print(f"Servicios adicionales: {', '.join(self.__servicios_adicionales)}")
+        print(f"Servicios adicionales: {', '.join(str(servicio) for servicio in self.__servicios_adicionales)}")
         print(f"Precio total: {self.__precio_total}")
         print(f"Estado: {self.__estado}")

@@ -1,4 +1,5 @@
-class Empleado:
+from Persona import Persona
+class Empleado(Persona):
     def __init__(self, nombre, telefono, email, identificacion,cargo,salario,fecha_ingreso):
         super().__init__(nombre, telefono, email, identificacion)
         self.__cargo = cargo

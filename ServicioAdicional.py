@@ -6,8 +6,12 @@ class ServicioAdicional:
         self.__precio = precio
         self.__duracion_horas = duracion_horas
 
+    def __str__(self):
+        return f"{self.__nombre} (${self.__precio})"
+    
     def mostrar_info(self):
         return (f"Nombre: {self.__nombre}, "
                 f"Descripcion: {self.__descripcion}, "
                 f"Precio: {self.__precio}, "
                 f"Duracion horas: {self.__duracion_horas}")
+
