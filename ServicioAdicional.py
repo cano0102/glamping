@@ -7,7 +7,7 @@ class ServicioAdicional:
         self.__duracion_horas = duracion_horas
 
     def mostrar_info(self):
-        return( f"Nombre : {self.__nombre}"
-                f"Descripcion: {self.__descripcion}"
-                f"Precio :{self.__precio}"
+        return (f"Nombre: {self.__nombre}, "
+                f"Descripcion: {self.__descripcion}, "
+                f"Precio: {self.__precio}, "
                 f"Duracion horas: {self.__duracion_horas}")

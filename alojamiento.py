@@ -28,6 +28,18 @@ class Alojamiento:
     def get_disponible(self):
         return self.__disponible
 
+    def get_id(self):
+        return self.__nombre  # Cambia esto por el atributo correcto de id en Huesped
+
+    def get_numero(self):
+        return self.__numero
+
+    def get_tipo(self):
+        return self.__tipo
+
+    def esta_disponible(self, fecha_in, fecha_out):
+        return self.__disponible
+
     # SETTERS
     def set_price(self, nuevo_valor: int):
         # SETTER DEL PRECIO DEL ALOJAMIENTO
