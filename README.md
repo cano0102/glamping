@@ -48,10 +48,40 @@ Este proyecto es una aplicación básica en Python que implementa los conceptos 
 - Python 3.x
 - No requiere librerías externas
 
-## Notas
-- El proyecto es modular y fácilmente ampliable.
-- Cada clase implementa encapsulamiento y, donde corresponde, herencia y polimorfismo.
+## Documentación automática con Sphinx
+
+Este proyecto utiliza **Sphinx** para generar documentación automática a partir del código fuente y los docstrings.
+
+### Pasos para generar la documentación:
+
+1. Instala Sphinx si no lo tienes:
+   ```bash
+   pip install sphinx
+   ```
+
+2. Inicializa la documentación (solo la primera vez):
+   ```bash
+   sphinx-quickstart docs
+   ```
+
+3. Dentro del directorio `docs`, habilita la extensión autodoc en `conf.py`:
+   ```python
+   extensions = ['sphinx.ext.autodoc']
+   ```
+
+4. Genera los archivos `.rst` automáticamente desde el código:
+   ```bash
+   sphinx-apidoc -o docs/source .
+   ```
+
+5. Construye la documentación en HTML:
+   ```bash
+   cd docs
+   make html
+   ```
+
+6. Abre `docs/_build/html/index.html` en tu navegador para ver la documentación.
 
 ---
 
-Este README describe la estructura y funcionamiento general del sistema de gestión de glamping, facilitando su comprensión y uso.
+Este README describe la estructura y funcionamiento general del sistema de gestión de glamping, facilitando su comprensión, uso y documentación.
