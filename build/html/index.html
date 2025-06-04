@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="es" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>glamping - Documentación &#8212; documentación de glamping - </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=f85f4cfb"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="glamping-documentacion">
+<h1>glamping - Documentación<a class="headerlink" href="#glamping-documentacion" title="Link to this heading">¶</a></h1>
+<p>Bienvenido a la documentación del sistema de glamping.</p>
+</section>
+<section id="module-gestor_glamping.Huesped">
+<span id="documentacion-de-modulos"></span><h1>Documentación de módulos<a class="headerlink" href="#module-gestor_glamping.Huesped" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="gestor_glamping.Huesped.Huesped">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gestor_glamping.Huesped.</span></span><span class="sig-name descname"><span class="pre">Huesped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">telefono</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">identificacion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_nacimiento</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pais_origen</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preferencias_alimentarias</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Huesped.Huesped" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Huesped.Huesped.calcular_edad">
+<span class="sig-name descname"><span class="pre">calcular_edad</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Huesped.Huesped.calcular_edad" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Huesped.Huesped.get_id">
+<span class="sig-name descname"><span class="pre">get_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Huesped.Huesped.get_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Huesped.Huesped.mostrar_info">
+<span class="sig-name descname"><span class="pre">mostrar_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Huesped.Huesped.mostrar_info" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-gestor_glamping.glamping">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gestor_glamping.glamping.</span></span><span class="sig-name descname"><span class="pre">Glamping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ubicacion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alojamientos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.alojamiento.Alojamiento" title="gestor_glamping.alojamiento.Alojamiento"><span class="pre">Alojamiento</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">huespedes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.Huesped.Huesped" title="gestor_glamping.Huesped.Huesped"><span class="pre">Huesped</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empleados</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.Empleado.Empleado" title="gestor_glamping.Empleado.Empleado"><span class="pre">Empleado</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reservas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.Reserva.Reserva" title="gestor_glamping.Reserva.Reserva"><span class="pre">Reserva</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">servicios_disponibles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">ServicioAdicional</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.glamping.Glamping" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.agrega_alojamiento">
+<span class="sig-name descname"><span class="pre">agrega_alojamiento</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alojamiento</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#gestor_glamping.alojamiento.Alojamiento" title="gestor_glamping.alojamiento.Alojamiento"><span class="pre">Alojamiento</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.agrega_alojamiento" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.buscar_alojamiento_disponible">
+<span class="sig-name descname"><span class="pre">buscar_alojamiento_disponible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tipo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_out</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.buscar_alojamiento_disponible" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.calcular_ocupacion_actual">
+<span class="sig-name descname"><span class="pre">calcular_ocupacion_actual</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.calcular_ocupacion_actual" title="Link to this definition">¶</a></dt>
+<dd><p>Retorna el porcentaje de alojamientos ocupados actualmente.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.contratar_empleado">
+<span class="sig-name descname"><span class="pre">contratar_empleado</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">empleado</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#gestor_glamping.Empleado.Empleado" title="gestor_glamping.Empleado.Empleado"><span class="pre">Empleado</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.contratar_empleado" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.crear_reserva">
+<span class="sig-name descname"><span class="pre">crear_reserva</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">huesped_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alojamiento_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_out</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.crear_reserva" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.generar_reporte_ingresos_mes">
+<span class="sig-name descname"><span class="pre">generar_reporte_ingresos_mes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.generar_reporte_ingresos_mes" title="Link to this definition">¶</a></dt>
+<dd><p>Suma el precio total de las reservas con check-in en el mes y año dados.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.get_alojamientos">
+<span class="sig-name descname"><span class="pre">get_alojamientos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.alojamiento.Alojamiento" title="gestor_glamping.alojamiento.Alojamiento"><span class="pre">Alojamiento</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.get_alojamientos" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.get_empleados">
+<span class="sig-name descname"><span class="pre">get_empleados</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.Empleado.Empleado" title="gestor_glamping.Empleado.Empleado"><span class="pre">Empleado</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.get_empleados" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.get_huespedes">
+<span class="sig-name descname"><span class="pre">get_huespedes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.Huesped.Huesped" title="gestor_glamping.Huesped.Huesped"><span class="pre">Huesped</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.get_huespedes" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.get_nombre">
+<span class="sig-name descname"><span class="pre">get_nombre</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.get_nombre" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.get_reservas">
+<span class="sig-name descname"><span class="pre">get_reservas</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.Reserva.Reserva" title="gestor_glamping.Reserva.Reserva"><span class="pre">Reserva</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.get_reservas" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.get_servicios_disponibles">
+<span class="sig-name descname"><span class="pre">get_servicios_disponibles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">ServicioAdicional</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.get_servicios_disponibles" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.get_ubicacion">
+<span class="sig-name descname"><span class="pre">get_ubicacion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.get_ubicacion" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.listar_reservas_activas">
+<span class="sig-name descname"><span class="pre">listar_reservas_activas</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.listar_reservas_activas" title="Link to this definition">¶</a></dt>
+<dd><p>Retorna una lista de reservas cuyo estado es “confirmada” o “en_curso”.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.registrar_huesped">
+<span class="sig-name descname"><span class="pre">registrar_huesped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">huesped</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#gestor_glamping.Huesped.Huesped" title="gestor_glamping.Huesped.Huesped"><span class="pre">Huesped</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.registrar_huesped" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.set_alojamientos">
+<span class="sig-name descname"><span class="pre">set_alojamientos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alojamientos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.alojamiento.Alojamiento" title="gestor_glamping.alojamiento.Alojamiento"><span class="pre">Alojamiento</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.set_alojamientos" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.set_empleados">
+<span class="sig-name descname"><span class="pre">set_empleados</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">empleados</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.Empleado.Empleado" title="gestor_glamping.Empleado.Empleado"><span class="pre">Empleado</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.set_empleados" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.set_huespedes">
+<span class="sig-name descname"><span class="pre">set_huespedes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">huespedes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.Huesped.Huesped" title="gestor_glamping.Huesped.Huesped"><span class="pre">Huesped</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.set_huespedes" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.set_nombre">
+<span class="sig-name descname"><span class="pre">set_nombre</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.set_nombre" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.set_reservas">
+<span class="sig-name descname"><span class="pre">set_reservas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reservas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gestor_glamping.Reserva.Reserva" title="gestor_glamping.Reserva.Reserva"><span class="pre">Reserva</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.set_reservas" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.set_servicios_disponibles">
+<span class="sig-name descname"><span class="pre">set_servicios_disponibles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">servicios_disponibles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">ServicioAdicional</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.set_servicios_disponibles" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.glamping.Glamping.set_ubicacion">
+<span class="sig-name descname"><span class="pre">set_ubicacion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ubicacion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#gestor_glamping.glamping.Glamping.set_ubicacion" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-gestor_glamping.alojamiento">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gestor_glamping.alojamiento.</span></span><span class="sig-name descname"><span class="pre">Alojamiento</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tipo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacidad_maxima</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precio_base_noche</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disponible</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amenidades</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.Liberar">
+<span class="sig-name descname"><span class="pre">Liberar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.Liberar" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.Reservar">
+<span class="sig-name descname"><span class="pre">Reservar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.Reservar" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento._numero">
+<span class="sig-name descname"><span class="pre">_numero</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento._numero" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.calcular_precio_temporada">
+<span class="sig-name descname"><span class="pre">calcular_precio_temporada</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">temporada</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.calcular_precio_temporada" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.esta_disponible">
+<span class="sig-name descname"><span class="pre">esta_disponible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fecha_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_out</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.esta_disponible" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.get_disponible">
+<span class="sig-name descname"><span class="pre">get_disponible</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.get_disponible" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.get_id">
+<span class="sig-name descname"><span class="pre">get_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.get_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.get_numero">
+<span class="sig-name descname"><span class="pre">get_numero</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.get_numero" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.get_price">
+<span class="sig-name descname"><span class="pre">get_price</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.get_price" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.get_tipo">
+<span class="sig-name descname"><span class="pre">get_tipo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.get_tipo" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.liberar">
+<span class="sig-name descname"><span class="pre">liberar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.liberar" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.mostrar_info">
+<span class="sig-name descname"><span class="pre">mostrar_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.mostrar_info" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.ocupar">
+<span class="sig-name descname"><span class="pre">ocupar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.ocupar" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.set_disponibilidad">
+<span class="sig-name descname"><span class="pre">set_disponibilidad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nuevo_valor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.set_disponibilidad" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.alojamiento.Alojamiento.set_price">
+<span class="sig-name descname"><span class="pre">set_price</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nuevo_valor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.alojamiento.Alojamiento.set_price" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-gestor_glamping.Empleado">
+<dt class="sig sig-object py" id="gestor_glamping.Empleado.Empleado">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gestor_glamping.Empleado.</span></span><span class="sig-name descname"><span class="pre">Empleado</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">telefono</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">identificacion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cargo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">salario</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_ingreso</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Empleado.Empleado" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Empleado.Empleado.calcular_antiguedad">
+<span class="sig-name descname"><span class="pre">calcular_antiguedad</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Empleado.Empleado.calcular_antiguedad" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Empleado.Empleado.get_id">
+<span class="sig-name descname"><span class="pre">get_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Empleado.Empleado.get_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Empleado.Empleado.mostrar_info">
+<span class="sig-name descname"><span class="pre">mostrar_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Empleado.Empleado.mostrar_info" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-gestor_glamping.Reserva">
+<dt class="sig sig-object py" id="gestor_glamping.Reserva.Reserva">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gestor_glamping.Reserva.</span></span><span class="sig-name descname"><span class="pre">Reserva</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">huesped</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#gestor_glamping.Huesped.Huesped" title="gestor_glamping.Huesped.Huesped"><span class="pre">Huesped</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">alojamiento</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#gestor_glamping.alojamiento.Alojamiento" title="gestor_glamping.alojamiento.Alojamiento"><span class="pre">Alojamiento</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_checkin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha_checkout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">servicios_adicionales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Reserva.Reserva" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Reserva.Reserva.agregar_servicio">
+<span class="sig-name descname"><span class="pre">agregar_servicio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">servicio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ServicioAdicional</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Reserva.Reserva.agregar_servicio" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Reserva.Reserva.calcular_noches">
+<span class="sig-name descname"><span class="pre">calcular_noches</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#gestor_glamping.Reserva.Reserva.calcular_noches" title="Link to this definition">¶</a></dt>
+<dd><p>Calcula el número de noches entre la fecha de check-in y check-out.
+Las fechas deben estar en formato “YYYY-MM-DD”.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Reserva.Reserva.calcular_precio_total">
+<span class="sig-name descname"><span class="pre">calcular_precio_total</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">temporada</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'baja'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Reserva.Reserva.calcular_precio_total" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Reserva.Reserva.cambiar_estado">
+<span class="sig-name descname"><span class="pre">cambiar_estado</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nuevo_estado</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Reserva.Reserva.cambiar_estado" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Reserva.Reserva.get_services">
+<span class="sig-name descname"><span class="pre">get_services</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Reserva.Reserva.get_services" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Reserva.Reserva.get_state">
+<span class="sig-name descname"><span class="pre">get_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Reserva.Reserva.get_state" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Reserva.Reserva.mostrar_informacion">
+<span class="sig-name descname"><span class="pre">mostrar_informacion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Reserva.Reserva.mostrar_informacion" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Reserva.Reserva.set_services">
+<span class="sig-name descname"><span class="pre">set_services</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">service</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Reserva.Reserva.set_services" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gestor_glamping.Reserva.Reserva.set_state">
+<span class="sig-name descname"><span class="pre">set_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gestor_glamping.Reserva.Reserva.set_state" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-gestor_glamping.ServicioAdicional"><span id="module-gestor_glamping.Persona"></span></span></section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">glamping</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navegación</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Brandon Alexis QUintero Alvarez.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

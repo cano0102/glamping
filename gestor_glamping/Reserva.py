@@ -1,8 +1,8 @@
 from typing import List
 from datetime import datetime
-from alojamiento import Alojamiento
-from Huesped import Huesped
-from ServicioAdicional import ServicioAdicional
+from gestor_glamping.alojamiento import Alojamiento
+from gestor_glamping.Huesped import Huesped
+from gestor_glamping.ServicioAdicional import ServicioAdicional
 class Reserva:
     _codigo_reserva = 1
     def __init__(self,huesped: Huesped,alojamiento: Alojamiento,fecha_checkin: str, fecha_checkout: str,servicios_adicionales: List[str]):

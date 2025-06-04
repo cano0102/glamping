@@ -1,4 +1,4 @@
-from Persona import Persona
+from gestor_glamping.Persona import Persona
 class Empleado(Persona):
     def __init__(self, nombre, telefono, email, identificacion,cargo,salario,fecha_ingreso):
         super().__init__(nombre, telefono, email, identificacion)
@@ -20,6 +20,6 @@ class Empleado(Persona):
                 f"Fecha_ingreso: {self.__fecha_ingreso}")
     
     def get_id(self):
-        return self._identificacion  # Corrige el atributo la implementación
+        return self._identificacion  
 
 

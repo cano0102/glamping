@@ -1,8 +1,8 @@
-from alojamiento import Alojamiento
-from Huesped import Huesped
-from Empleado import Empleado
-from Reserva import Reserva
-from ServicioAdicional import ServicioAdicional
+from gestor_glamping.alojamiento import Alojamiento
+from gestor_glamping.Huesped import Huesped
+from gestor_glamping.Empleado import Empleado
+from gestor_glamping.Reserva import Reserva
+from gestor_glamping.ServicioAdicional import ServicioAdicional
 from typing import List
 from datetime import datetime
 

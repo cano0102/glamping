@@ -1,4 +1,4 @@
-from Persona import Persona
+from gestor_glamping.Persona import Persona
 class Huesped(Persona):
     def __init__(self, nombre, telefono, email, identificacion, fecha_nacimiento, pais_origen, preferencias_alimentarias):
         super().__init__(nombre, telefono, email, identificacion)
