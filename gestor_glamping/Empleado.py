@@ -19,7 +19,50 @@ class Empleado(Persona):
                 f"Salario: {self.__salario}, "
                 f"Fecha_ingreso: {self.__fecha_ingreso}")
     
+      # Getters
+    def get_nombre(self):
+        return self._nombre
+    
+    def get_telefono(self):
+        return self._telefono
+    
+    def get_email(self):
+        return self._email
+    
     def get_id(self):
         return self._identificacion  
+
+    def get_cargo(self):
+        return self.__cargo
+    
+    def get_salario(self):
+        return self.__salario
+    
+    def get_fecha_ingreso(self):
+        return self.__fecha_ingreso
+
+    # Setters
+    def set_nombre(self, nombre):
+        self._nombre = nombre
+
+    def set_telefono(self, telefono):
+        self._telefono = telefono
+
+    def set_email(self, email):
+        self._email = email
+
+    def set_id(self, identificacion):
+        self._identificacion = identificacion  
+
+
+    def set_cargo(self, cargo):
+        self.__cargo = cargo
+    
+    def set_salario(self, salario):
+        self.__salario = salario
+    
+    def set_fecha_ingreso(self, fecha_ingreso):
+        self.__fecha_ingreso = fecha_ingreso
+
 
 
