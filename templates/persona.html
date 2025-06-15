@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+
+{% block title %}Registrar Persona{% endblock %}
+
+{% block content %}
+<main>
+    <div class="formulario">
+        <h2>Registrar Persona</h2>
+        <form method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="telefono" placeholder="Teléfono" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="text" name="identificacion" placeholder="Identificación" required>
+            <button type="submit">Mostrar Información</button>
+        </form>
+
+        {% if info %}
+        <div class="resultado">
+            <h2>Información ingresada</h2>
+            <ul>
+                {% for linea in info.split(', ') %}
+                <li>{{ linea }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</main>
+{% endblock %}

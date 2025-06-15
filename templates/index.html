@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Glamping{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestion Glamping</h1>
+    
+        <nav>
+            <a href="{{ url_for('index') }}">Inicio</a>
+            <a href="{{ url_for('persona') }}">Persona</a>
+            <a href="{{ url_for('huesped') }}">Huésped</a>
+            <a href="{{ url_for('empleado') }}">Empleado</a>
+            <a href="{{ url_for('alojamiento') }}">Alojamiento</a>
+            <a href="{{ url_for('reserva') }}">Reserva</a>
+            <a href="{{ url_for('servicio') }}">Servicio</a>
+        </nav>
+   
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

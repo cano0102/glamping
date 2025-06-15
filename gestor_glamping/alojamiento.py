@@ -33,7 +33,7 @@ class Alojamiento:
         return self.__disponible
 
     def get_id(self):
-        return self.__nombre  # Cambia esto por el atributo correcto de id en Huesped
+        return self.__numero  # Cambia esto por el atributo correcto de id en Huesped
 
     def get_numero(self):
         return self.__numero

@@ -68,12 +68,12 @@ class Reserva:
             print("Estado no válido. Usa: confirmada, en_curso, finalizada o cancelada.")
 
             
-    def mostrar_informacion(self):
-        print(f"Código de reserva: {self.__codigo}")
-        print(f"Huésped: {self.__huesped}")
-        print(f"Alojamiento: {self.__alojamiento}")
-        print(f"Fecha de check-in: {self.__fecha_checkin}")
-        print(f"Fecha de check-out: {self.__fecha_checkout}")
-        print(f"Servicios adicionales: {', '.join(str(servicio) for servicio in self.__servicios_adicionales)}")
-        print(f"Precio total: {self.__precio_total}")
-        print(f"Estado: {self.__estado}")
+    def mostrar_info(self):
+       return (f"Código de reserva: {self.__codigo}, "
+               f"Huésped: {self.__huesped}, "
+               f"Alojamiento: {self.__alojamiento}, "
+               f"Fecha de check-in: {self.__fecha_checkin}, "
+               f"Fecha de check-out: {self.__fecha_checkout}, "
+               f"Servicios adicionales: {', '.join(str(servicio) for servicio in self.__servicios_adicionales)}, "
+               f"Precio total: {self.__precio_total}, "
+               f"Estado: {self.__estado}")
