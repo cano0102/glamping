@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask,render_template, request, redirect, url_for
 from gestor_glamping.Persona import Persona
 from gestor_glamping.Huesped import Huesped
 from gestor_glamping.Empleado import Empleado
@@ -110,6 +110,18 @@ def servicio():
         servicio = ServicioAdicional(nombre, descripcion, precio, duracion_horas)
         info = f"Servicio registrado: {servicio}"
     return render_template('servicio.html', info=info)
+
+@app.route('/build/html/<path:filename>')
+def sphinx_static(filename):
+    return send_from_directory('build/html', filename)
+
+@app.route('/_static/<path:filename>')
+def sphinx_static_files(filename):
+    return send_from_directory('build/html/_static', filename)
+
+@app.route('/Documentacion')
+def documentacion():
+    return redirect('/build/html/index.html')
 
 
 if __name__ == '__main__':
